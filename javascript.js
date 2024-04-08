@@ -46,10 +46,10 @@ function getOptions() {
     let shuffledOptions = options.sort(() => Math.random() - 0.5).slice(0, 4);
 
     Ranswer = shuffledOptions[Math.floor(Math.random() * 4)];
-
+    
     let imgSrc = `${Ranswer}.png`;
-
     document.getElementById("equation").innerHTML = `<img src="${imgSrc}">`;
+    
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].innerText = shuffledOptions[i];
