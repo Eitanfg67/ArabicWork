@@ -46,7 +46,6 @@ function getOptions() {
 
     Ranswer = shuffledOptions[Math.floor(Math.random() * 4)];
     let imgSrc = `$https://eitanfg67.github.io/ArabicWork/{Ranswer}.png`
-    let imgSrc = `${Ranswer}.png`;
 
     document.getElementById("equation").innerHTML = `<img src="${imgSrc}">`;
 
