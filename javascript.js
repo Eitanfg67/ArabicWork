@@ -18,7 +18,7 @@ function restart() {
     gameBox.style.display = "block"
     startBox.style.display = "none";
     endBox.style.display = "none";
-    
+
 }
 
 function whenFinished() {
@@ -42,8 +42,7 @@ function nextQuestion() {
 }
 
 function getOptions() {
-    let options = ['אני','ב','אימי','רופאה','משפחתי','אבי','מורה','משפחתו','כפר','עזב','הלך','אל','העיר','יום אחד','עם','ענבים','כרם','דוד','שיחקתי','בני דודי','בכדורגל','ליד','המחשב','לבקר','ארבע','לידה']
-    let shuffledOptions = options.sort(() => Math.random() - 0.5).slice(0, 4);
+    let options = ['אני', 'ב', 'אימי', 'רופאה', 'משפחתי', 'אבי', 'מורה', 'משפחתו', 'כפר', 'עזב', 'הלך', 'אל', 'העיר', 'יום אחד', 'עם', 'ענבים', 'כרם', 'דוד', 'שיחקתי', 'בני דודי', 'בכדורגל', 'ליד', 'המחשב', 'לבקר', 'ארבע', 'לידה']    let shuffledOptions = options.sort(() => Math.random() - 0.5).slice(0, 4);
 
     Ranswer = shuffledOptions[Math.floor(Math.random() * 4)];
 
