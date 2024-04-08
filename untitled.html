@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <script src="javascript.js" defer></script>
+    <title>חידון בערבית</title>
+    <link rel="icon" href="D7O5oHmUcAEqAg4.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <div id="start-game">
+            <h1>בלונדי חמדמד</h1>
+            <p>לחצו על הכפתור בכדי להתחיל</p>
+            <a id="start-btn" onclick="restart()">קדימה למשחק</a>
+        </div>
+        <div id="in-game">
+            <div class="top-section">
+                <h1>חידון בערבית</h1>
+                <div class="game-data">
+                    <p>שאלה :
+                        <span id="Qno">0</span>/10
+                    </p>
+                    <p>ציון: <span id="score">0</span></p>
+                </div>
+                <div id="timer">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div id="question-container">
+                <div id="equation">blank</div>
+            </div>
+            <h3>בחר את התשובה שהכי מתאימה: </h3>
+            <div class="answer-card">
+                <button>Option A</button>
+                <button>Option B</button>
+                <button>Option C</button>
+                <button>Option D</button>
+            </div>
+        </div>
+        <div id="end-game">
+            <h1>&#128515</h1>
+            <h1>התוצאה הסופית שלך היא: <span id="final-score">0</span> / 1000</h1>
+            <p id="message"></p>
+            <a id="restart-btn" onclick="restart()">שחק שוב</a>
+        </div>
+    </div>
+</body>
+
+</html>
